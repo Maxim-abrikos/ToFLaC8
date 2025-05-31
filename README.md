@@ -7,7 +7,7 @@
 анализа на основе метода рекурсивного спуска. 
 G[While]: 
 1. While → do Stmt  while Cond ; 
-2. Cond → LogExpr {or <LogExpr>} 
+2. Cond → LogExpr {or LogExpr} 
 3. LogExpr → RelExpr {and RelExpr}  
 4. RelExpr → Operand [rel Operand]
 5. Operand → var | const 
