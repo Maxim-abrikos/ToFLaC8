@@ -5,8 +5,8 @@
 Вариант 26 
 Для грамматики G[<While>] разработать и реализовать алгоритм 
 анализа на основе метода рекурсивного спуска. 
-G[<While>]: 
-1. <While> → do <Stmt>  while <Cond> ; 
+G[While]: 
+1. While → do Stmt  while Cond ; 
 2. <Cond>→ <LogExpr> {or <LogExpr>} 
 3. <LogExpr>→ <RelExpr> {and <RelExpr>}  
 4. <RelExpr>→<Operand> [rel <Operand>]
