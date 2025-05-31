@@ -7,12 +7,12 @@
 анализа на основе метода рекурсивного спуска. 
 G[While]: 
 1. While → do Stmt  while Cond ; 
-2. <Cond>→ <LogExpr> {or <LogExpr>} 
-3. <LogExpr>→ <RelExpr> {and <RelExpr>}  
-4. <RelExpr>→<Operand> [rel <Operand>]
-5. <Operand>→ var | const 
-6. <Stmt>→ var as <ArithExpr> 
-7. <ArithExpr>→<Operand> {ao <Operand>}
+2. Cond → LogExpr {or <LogExpr>} 
+3. LogExpr → RelExpr {and RelExpr}  
+4. RelExpr → Operand [rel Operand]
+5. Operand → var | const 
+6. Stmt → var as ArithExpr
+7. ArithExpr → Operand {ao Operand}
 Примечание: while, do, and, or – ключевые слова. В тип rel 
 объединили операции сравнения <,<=, >=, >, != и ==, в тип ao 
 арифметические операции + и -, в тип as оператор присваивания =, тип var – название переменной (только буквы), тип const – числа. Причина, по 
