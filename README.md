@@ -69,6 +69,12 @@ Parse()
         |  
         +-- Expect(";", ";")    
         ```
+![Снимок экрана (1958)](https://github.com/user-attachments/assets/8f2af8cd-623b-4aea-bb54-f306cc1a22f0)  
+![Снимок экрана (1957)](https://github.com/user-attachments/assets/0df631b6-4d1e-4ef7-951f-587767ab762f)  
+![Снимок экрана (1956)](https://github.com/user-attachments/assets/67b4ebb1-9d00-4787-b1a3-9a2138463a03)  
+![Снимок экрана (1955)](https://github.com/user-attachments/assets/aef66a6b-8c10-46e8-b03b-e589aa6c9fc4)  
+
+
 
 
 
