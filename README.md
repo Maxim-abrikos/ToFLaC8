@@ -24,49 +24,49 @@ G[While]:
 Классификация грамматики - Контекстно свободная (1, 2, 3, 4, 6 и 7 правила)  
 
 Схема вызова функций:  
-Parse()
-   |
-   +-- WhileStatement()
-        |
-        +-- Expect("do", "do")
-        |
-        +-- Stmt()
-        |    |
-        |    +-- IsVar()
-        |    |    |
-        |    |    +-- GetNextToken() (для peek)
-        |    |
-        |    +-- Consume() (если IsVar() true)
-        |    |
-        |    +-- Expect("as", "as", "statement")
-        |    |
-        |    +-- ArithExpr()
-        |         |
-        |         +-- Operand()
-        |         |    |
-        |         |    +-- IsVar()
-        |         |    |
-        |         |    +-- IsConst()
-        |         |    |
-        |         |    +-- GetNextToken() (для peek)
-        |         |    +-- Consume() (если IsVar() или IsConst() true)
-        |         |
-        |         +-- Match("ao")  (повторяется)
-        |
-        +-- Expect("while", "while")
-        |
-        +-- Cond()
-        |    |
-        |    +-- LogExpr()
-        |    |    |
-        |    |    +-- RelExpr()
-        |    |    |    |
-        |    |    |    +-- Operand() (как описано выше)
-        |    |    |    |
-        |    |    |    +-- Match("rel") (optional)
-        |    |    +-- Match("and") (повторяется)
-        |
-        +-- Expect(";", ";")  
+Parse()  
+   |  
+   +-- WhileStatement()  
+        |  
+        +-- Expect("do", "do")  
+        |  
+        +-- Stmt()  
+        |    |  
+        |    +-- IsVar()  
+        |    |    |  
+        |    |    +-- GetNextToken() (для peek)  
+        |    |  
+        |    +-- Consume() (если IsVar() true)  
+        |    |  
+        |    +-- Expect("as", "as", "statement")  
+        |    |  
+        |    +-- ArithExpr()  
+        |         |  
+        |         +-- Operand()  
+        |         |    |  
+        |         |    +-- IsVar()  
+        |         |    |  
+        |         |    +-- IsConst()  
+        |         |    |  
+        |         |    +-- GetNextToken() (для peek)  
+        |         |    +-- Consume() (если IsVar() или IsConst() true)  
+        |         |  
+        |         +-- Match("ao")  (повторяется)  
+        |  
+        +-- Expect("while", "while")  
+        |  
+        +-- Cond()  
+        |    |  
+        |    +-- LogExpr()  
+        |    |    |  
+        |    |    +-- RelExpr()  
+        |    |    |    |  
+        |    |    |    +-- Operand() (как описано выше)  
+        |    |    |    |  
+        |    |    |    +-- Match("rel") (optional)  
+        |    |    +-- Match("and") (повторяется)  
+        |  
+        +-- Expect(";", ";")    
         
 
 
