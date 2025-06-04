@@ -67,8 +67,8 @@ Parse()
         |    |    |    +-- Match("rel") (optional)  
         |    |    +-- Match("and") (повторяется)  
         |  
-        +-- Expect(";", ";")    
-        ```
+        +-- Expect(";", ";")
+```  
 ![Снимок экрана (1958)](https://github.com/user-attachments/assets/8f2af8cd-623b-4aea-bb54-f306cc1a22f0)  
 ![Снимок экрана (1957)](https://github.com/user-attachments/assets/0df631b6-4d1e-4ef7-951f-587767ab762f)  
 ![Снимок экрана (1956)](https://github.com/user-attachments/assets/67b4ebb1-9d00-4787-b1a3-9a2138463a03)  
